@@ -2,6 +2,6 @@ version: 0.0
 os: linux
 hooks:
   BeforeInstall:
-    - location: install_SH
+    - location: SH/install_dp
       timeout: 300
       runas: root
