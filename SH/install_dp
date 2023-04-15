@@ -1,3 +1,5 @@
-aws s3 cp s3://codepipeline-us-east-1-831652875528/tomcat/ROOT.war /tmp
-sudo mv /tmp/ROOT.war /usr/share/tomcat/webapps/ROOT.war
-sudo service tomcat restart
+#!/bin/bash
+sudo apt-get update
+sudo apt-get install -y apache2
+sudo rm /var/www/html/index.html
+sudo service apache2 restart
